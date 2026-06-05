@@ -1,9 +1,9 @@
-```python
+
 import telebot
 import os
 
 # 从环境变量读取 Token，更加安全
-BOT_TOKEN = os.environ.get('BOT_TOKEN', '8979204824:AAF2i0-BnBalcqbpgWoVRX_AVQ9LD9B-eRE')
+BOT_TOKEN = os.environ.get('8979204824:AAF2i0-BnBalcqbpgWoVRX_AVQ9LD9B-eRE')
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # 简单的权限检查（Whitelist）
