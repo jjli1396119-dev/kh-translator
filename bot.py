@@ -35,6 +35,10 @@ def translate(message):
             ]
         )
         bot.reply_to(message, response.choices[0].message.content)
+    except Exception as e:
+            ]
+        )
+        bot.reply_to(message, response.choices[0].message.content)
     except Exception:
         bot.reply_to(message, "服务处理中...")
 
