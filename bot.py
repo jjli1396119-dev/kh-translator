@@ -41,4 +41,4 @@ def translate(message):
 # 同时启动 Flask 网页和机器人
 if __name__ == "__main__":
     threading.Thread(target=run_flask).start()
-    bot.infinity_polling()
+    bot.infinity_polling(none_stop=True, skip_pending=True)
