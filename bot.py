@@ -36,7 +36,9 @@ def translate(message):
         )
         bot.reply_to(message, response.choices[0].message.content)
     except Exception as e:
-        bot.reply_to(message, "服务处理中...")
+        # 这一步至关重要，请确保代码中有这行打印
+        print(f"Error occurred: {e}") 
+        bot.reply_to(message, f"服务出错了，原因: {str(e)[:50]}")
 
 # 同时启动 Flask 网页和机器人
 if __name__ == "__main__":
